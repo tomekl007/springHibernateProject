@@ -8,9 +8,9 @@ import org.springframework.stereotype.Component;
 
 
 
-//@Component
-public class HibernateSpitterDaoFromTemplate{// implements SpitterDao {
-  /*@Autowired
+@Component
+public class HibernateSpitterDaoFromTemplate implements SpitterDao {
+  @Autowired
   private HibernateTemplate template;
   
   public void addSpitter(Spitter spitter) {
@@ -54,7 +54,7 @@ public class HibernateSpitterDaoFromTemplate{// implements SpitterDao {
   }
   
   public List<Spitter> findAllSpitters() {
-    // TODO Auto-generated method stub
-    return null;
-  }*/
+	  return template.loadAll(Spitter.class); // this isn't right...just a placeholder for now
+ 
+  }
 }

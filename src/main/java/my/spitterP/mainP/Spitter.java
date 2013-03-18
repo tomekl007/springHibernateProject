@@ -101,4 +101,10 @@ public class Spitter {
     // TODO Auto-generated method stub
     return super.hashCode();
   }
+  
+  @Override
+	public String toString() {
+	   
+		return this.fullName;
+	}
 }

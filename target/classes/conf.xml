@@ -14,7 +14,7 @@
     </jdbc:embedded-database>
     
     
-    <bean id="databaseFacade" class="my.spitterP.mainP.HibernateSpitterDao" />   
+    <bean id="databaseFacade" class="my.spitterP.mainP.HibernateSpitterDaoFromTemplate" />   
     
 	<tx:annotation-driven/>
 
@@ -45,6 +45,7 @@
   <property name="mappingResources">
    <list>
     <value>Spitter.hbm.xml</value>
+     <value>Spittle.hbm.xml</value>
    </list>
   </property>
  

@@ -6,9 +6,11 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 import my.spitterP.mainP.Spitter;
 
+//@Table(name = "spittle")
 @Entity
 public class Spittle {
   private Long id;
