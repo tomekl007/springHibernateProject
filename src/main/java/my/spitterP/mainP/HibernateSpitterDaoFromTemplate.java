@@ -10,10 +10,20 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class HibernateSpitterDaoFromTemplate implements SpitterDao {
-  @Autowired
+ 
+	
+	@Autowired
   private HibernateTemplate template;
   
-  public void addSpitter(Spitter spitter) {
+ // public HibernateTemplate getTemplate() {
+//	return template;
+//}
+
+//public void setTemplate(HibernateTemplate template) {
+//	this.template = template;
+//}
+
+public void addSpitter(Spitter spitter) {
     template.saveOrUpdate(spitter);
   }
 
